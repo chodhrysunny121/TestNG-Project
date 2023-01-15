@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-14T16:50:38 EST" name="Suite" finished-at="2023-01-14T16:56:12 EST" duration-ms="334096">
+    <groups>
+    </groups>
+    <test started-at="2023-01-14T16:50:38 EST" name="Test" finished-at="2023-01-14T16:56:12 EST" duration-ms="334096">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@f78a47e]" started-at="2023-01-14T16:53:18 EST" name="setup" finished-at="2023-01-14T16:54:22 EST" duration-ms="63759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithValidCrendetials()[pri:1, instance:tests.LoginTest@f78a47e]" started-at="2023-01-14T16:54:22 EST" name="loginWithValidCrendetials" finished-at="2023-01-14T16:54:54 EST" duration-ms="32611" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertFalse(Assert.java:78)
+at org.testng.Assert.assertFalse(Assert.java:88)
+at tests.LoginTest.loginWithValidCrendetials(LoginTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCrendetials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@f78a47e]" started-at="2023-01-14T16:54:54 EST" name="tearDown" finished-at="2023-01-14T16:55:11 EST" duration-ms="16404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@f78a47e]" started-at="2023-01-14T16:55:11 EST" name="setup" finished-at="2023-01-14T16:55:25 EST" duration-ms="14675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithInvalidCredentials()[pri:2, instance:tests.LoginTest@f78a47e]" started-at="2023-01-14T16:55:25 EST" name="loginWithInvalidCredentials" finished-at="2023-01-14T16:55:27 EST" duration-ms="2188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@f78a47e]" started-at="2023-01-14T16:55:27 EST" name="tearDown" finished-at="2023-01-14T16:55:28 EST" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.RegisterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisterTest@4f80542f]" started-at="2023-01-14T16:50:38 EST" name="setup" finished-at="2023-01-14T16:51:33 EST" duration-ms="54886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerWithMandatoryFields()[pri:1, instance:tests.RegisterTest@4f80542f]" started-at="2023-01-14T16:51:33 EST" name="registerWithMandatoryFields" finished-at="2023-01-14T16:51:47 EST" duration-ms="14476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithMandatoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegisterTest@4f80542f]" started-at="2023-01-14T16:51:47 EST" name="tearDown" finished-at="2023-01-14T16:51:54 EST" duration-ms="6985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisterTest@4f80542f]" started-at="2023-01-14T16:51:54 EST" name="setup" finished-at="2023-01-14T16:52:49 EST" duration-ms="55076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerWithAllFields()[pri:2, instance:tests.RegisterTest@4f80542f]" started-at="2023-01-14T16:52:49 EST" name="registerWithAllFields" finished-at="2023-01-14T16:52:55 EST" duration-ms="5910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithAllFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.RegisterTest@4f80542f]" started-at="2023-01-14T16:52:55 EST" name="tearDown" finished-at="2023-01-14T16:53:18 EST" duration-ms="22515" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Timed out waiting for driver server to stop.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'PC-HOME', ip: '192.168.0.39', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ca1a063d3d019acc78ca7dc7d6e281b, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\atulc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55453/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ca1a063d3d019acc78ca7dc7d6e281b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'PC-HOME', ip: '192.168.0.39', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ca1a063d3d019acc78ca7dc7d6e281b, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\atulc\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55453/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ca1a063d3d019acc78ca7dc7d6e281b
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:443)
+at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:280)
+at tests.RegisterTest.tearDown(RegisterTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'PC-HOME', ip: '192.168.0.39', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+... 39 more
+Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'PC-HOME', ip: '192.168.0.39', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: driver.version: unknown
+at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)
+at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:114)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:122)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RegisterTest -->
+      <class name="tests.SearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTest@644baf4a]" started-at="2023-01-14T16:55:28 EST" name="setup" finished-at="2023-01-14T16:55:47 EST" duration-ms="18579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchWithValidProductName()[pri:1, instance:tests.SearchTest@644baf4a]" started-at="2023-01-14T16:55:47 EST" name="searchWithValidProductName" finished-at="2023-01-14T16:55:48 EST" duration-ms="1411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithValidProductName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@644baf4a]" started-at="2023-01-14T16:55:48 EST" name="tearDown" finished-at="2023-01-14T16:55:49 EST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTest@644baf4a]" started-at="2023-01-14T16:55:49 EST" name="setup" finished-at="2023-01-14T16:55:58 EST" duration-ms="9516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchWithInvalidProductName()[pri:2, instance:tests.SearchTest@644baf4a]" started-at="2023-01-14T16:55:58 EST" name="searchWithInvalidProductName" finished-at="2023-01-14T16:55:59 EST" duration-ms="1016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithInvalidProductName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@644baf4a]" started-at="2023-01-14T16:55:59 EST" name="tearDown" finished-at="2023-01-14T16:55:59 EST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTest@644baf4a]" started-at="2023-01-14T16:55:59 EST" name="setup" finished-at="2023-01-14T16:56:10 EST" duration-ms="10871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchByNotProvidingAnyProductName()[pri:3, instance:tests.SearchTest@644baf4a]" started-at="2023-01-14T16:56:10 EST" name="searchByNotProvidingAnyProductName" finished-at="2023-01-14T16:56:11 EST" duration-ms="858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByNotProvidingAnyProductName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@644baf4a]" started-at="2023-01-14T16:56:11 EST" name="tearDown" finished-at="2023-01-14T16:56:12 EST" duration-ms="586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SearchTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
